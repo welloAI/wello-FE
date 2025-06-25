@@ -1,0 +1,116 @@
+# .github/issue_template.yml
+
+blank_issues_enabled: true # 템플릿 없이 빈 이슈를 생성할 수 있도록 허용 (false로 설정 시 템플릿만 사용 가능)
+contact_links:
+  - name: GitHub Community Support
+    url: https://github.com/orgs/community/discussions
+    about: Please ask and answer questions here. # 빈 이슈 대신 특정 외부 링크로 연결 가능
+  - name: Security Vulnerability Report
+    url: https://github.com/your-org/your-repo/security/policy
+    about: Report a security vulnerability.
+
+issue_templates:
+  - name: Bug Report
+    description: Report a reproducible bug or unexpected behavior.
+    labels: [bug, needs-triage]
+    assignees:
+    body:
+      - type: markdown
+        attributes:
+          value: |
+            ## 🐛 버그 설명 (Bug Description)
+            버그에 대한 명확하고 간결한 설명을 작성해주세요.
+      - type: textarea
+        id: what-happened
+        attributes:
+          label: 🔁 재현 단계 (Steps to Reproduce)
+          description: How to reproduce the bug (e.g., click X, then Y, then Z).
+          placeholder: Tell us what you did to make the bug happen!
+          value: |
+            1. 
+            2. 
+            3. 
+        validations:
+          required: true
+      - type: textarea
+        id: actual-behavior
+        attributes:
+          label: ❌ 실제 발생한 동작 (Actual Behavior)
+          description: What actually happened?
+          placeholder: Describe the exact behavior you observed.
+        validations:
+          required: true
+      - type: textarea
+        id: expected-behavior
+        attributes:
+          label: ✅ 예상된 동작 (Expected Behavior)
+          description: What did you expect to happen instead?
+          placeholder: Describe what you thought should happen.
+        validations:
+          required: true
+      - type: dropdown
+        id: os
+        attributes:
+          label: 🖥️ 운영체제 (OS)
+          options:
+            - Windows
+            - macOS
+            - Linux
+            - Android
+            - iOS
+            - Other
+        validations:
+          required: true
+      - type: input
+        id: browser
+        attributes:
+          label: 🌐 브라우저 (Browser)
+          description: Which browser are you using? (e.g., Chrome, Firefox, Safari)
+        validations:
+          required: false
+      - type: textarea
+        id: logs
+        attributes:
+          label: 📄 로그 (Logs)
+          description: If applicable, please include relevant log output.
+          render: shell
+      - type: checkboxes
+        id: terms
+        attributes:
+          label: Code of Conduct
+          description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+          options:
+            - label: I agree to follow this project's Code of Conduct
+              required: true
+  - name: Feature Request
+    description: Suggest an idea for this project
+    labels: [enhancement, new-feature]
+    assignees:
+    body:
+      - type: markdown
+        attributes:
+          value: |
+            ## ✨ 기능 개요 (Feature Overview)
+            제안하는 기능에 대해 간략하게 설명해주세요.
+      - type: textarea
+        id: why-needed
+        attributes:
+          label: 💡 필요한 이유 (Why is this needed?)
+          description: Explain why this feature is important and what problem it solves.
+          placeholder: Why do we need this?
+        validations:
+          required: true
+      - type: textarea
+        id: detailed-description
+        attributes:
+          label: 📝 상세 기능 설명 (Detailed Feature Description)
+          description: Describe how the feature should work in detail.
+        validations:
+          required: true
+      - type: textarea
+        id: usage-scenario
+        attributes:
+          label: 🚀 예상 사용 시나리오 (Usage Scenario)
+          description: Describe how a user would interact with this feature.
+        validations:
+          required: false
