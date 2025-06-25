@@ -1,0 +1,98 @@
+# Node
+node_modules/
+.npm/
+.yarn-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Metro Bundler cache
+.expo/
+.haul/
+.next/
+dist/
+build/
+coverage/
+
+# Android
+android/build/
+android/app/build/
+android/app/.idea/
+android/.gradle/
+*.apk
+*.ap_
+*.aab
+*.keystore
+local.properties
+.project
+.idea/
+captures/
+data-binding/
+lint-results-*
+proguard-project.txt
+gradle-wrapper.jar
+gradlew
+gradlew.bat
+
+# iOS
+ios/build/
+ios/Pods/
+ios/.symlinks/
+ios/.generated/
+ios/*.xcworkspace/
+ios/*.xcodeproj/project.xcworkspace/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/project.xcuserdata/
+ios/*.xcodeproj/xcshareddata/
+ios/.swiftpm/
+DerivedData/
+*.ipa
+*.app
+*.xctest
+
+# Xcode specific
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+Profile*
+*.moved-aside
+AutoSaved\ Application\ State
+*.xcassets/
+*.mobileprovision
+
+# VS Code
+.vscode/
+
+# Editor config
+.DS_Store
+.env
+.env.local
+.expo-shared/
+.flow/
+.jest/
+.pnp/
+.pnp.js
+.prettierignore
+.prettierrc
+.prettierrc.js
+.temp/
+.vscodeignore
+/tmp/
+
+# Others
+*.log
+*.bak
+*.swp
+*.swo
+*.orig
+.idea/
+.project
+.settings/
+Thumbs.db
